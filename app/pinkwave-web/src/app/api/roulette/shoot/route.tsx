@@ -7,19 +7,19 @@ async function getResponse(): Promise<NextResponse> {
     getFrameHtmlResponse({
       buttons: [
         {
-          label: '🎯 Try Your Luck!',
+          label: 'Mini Building',
           action: 'post',
           target: `${NEXT_PUBLIC_URL}/api/roulette/shoot`
         },
         {
-          label: '🎲 Show Result',
+          label: 'Main Building',
           action: 'post',
           target: `${NEXT_PUBLIC_URL}/api/roulette/stop`
         }
       ],
       image: {
         aspectRatio: '1:1',
-        src: `${NEXT_PUBLIC_URL}/roulette/hey.png`,
+        src: `${NEXT_PUBLIC_URL}/roulette/page2.png`,
       },
     }),
   );
