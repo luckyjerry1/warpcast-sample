@@ -5,9 +5,21 @@ import { getFrameHtmlResponse } from '../../../../utils/getFrameHtmlResponse';
 async function getResponse(): Promise<NextResponse> {
   return new NextResponse(
     getFrameHtmlResponse({
+      buttons: [
+        {
+          label: 'Builder grants',
+          action: 'post',
+          target: `${NEXT_PUBLIC_URL}/api/roulette/shoot`
+        },
+        {
+          label: 'Tipper grants',
+          action: 'post',
+          target: `${NEXT_PUBLIC_URL}/api/roulette/stop`
+        }
+      ],
       image: {
         aspectRatio: '1:1',
-        src: `${NEXT_PUBLIC_URL}/roulette/survived.png`,
+        src: `${NEXT_PUBLIC_URL}/roulette/page5.png`,
       },
     }),
   );
