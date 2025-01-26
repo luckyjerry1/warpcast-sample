@@ -12,9 +12,9 @@ async function getResponse(): Promise<NextResponse> {
           target: `https://hunt.town/mint`
         },
         {
-          label: 'Go back',
+          label: '< back',
           action: 'post',
-          target: `${NEXT_PUBLIC_URL}/api/roulette/roulette`
+          target: `${NEXT_PUBLIC_URL}/api/roulette/shoot`
         }
       ],
       image: {

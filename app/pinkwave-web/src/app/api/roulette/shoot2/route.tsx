@@ -12,7 +12,7 @@ async function getResponse(): Promise<NextResponse> {
           target: `https://mint.club/nft/base/MINIBD`
         },
         {
-          label: 'Go back',
+          label: '< back',
           action: 'post',
           target: `${NEXT_PUBLIC_URL}/api/roulette/shoot`
         }
