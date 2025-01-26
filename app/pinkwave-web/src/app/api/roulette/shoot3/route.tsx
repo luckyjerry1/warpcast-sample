@@ -7,9 +7,9 @@ async function getResponse(): Promise<NextResponse> {
     getFrameHtmlResponse({
       buttons: [
         {
-          label: 'Mint Mini Building',
-          action: 'post',
-          target: `${NEXT_PUBLIC_URL}/api/roulette/shoot`
+          label: 'Mint Mainbuilding',
+          action: 'link',
+          target: `https://hunt.town/mint`
         },
         {
           label: 'Go back',
