@@ -8,18 +8,18 @@ async function getResponse(): Promise<NextResponse> {
       buttons: [
         {
           label: 'Mint Mini Building',
-          action: 'link',
-          target: `https://mint.club/nft/base/MINIBD`
+          action: 'post',
+          target: `${NEXT_PUBLIC_URL}/api/roulette/shoot`
         },
         {
           label: 'Go back',
           action: 'post',
-          target: `${NEXT_PUBLIC_URL}/api/roulette/shoot`
+          target: `${NEXT_PUBLIC_URL}/api/roulette/roulette`
         }
       ],
       image: {
         aspectRatio: '1:1',
-        src: `${NEXT_PUBLIC_URL}/roulette/page4.png`,
+        src: `${NEXT_PUBLIC_URL}/roulette/page3.png`,
       },
     }),
   );
