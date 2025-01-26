@@ -14,7 +14,12 @@ async function getResponse(): Promise<NextResponse> {
         {
           label: 'Tipper grants',
           action: 'post',
-          target: `${NEXT_PUBLIC_URL}/api/roulette/stop`
+          target: `${NEXT_PUBLIC_URL}/api/roulette/stop3`
+        },
+        {
+          label: '< back',
+          action: 'post',
+          target: `${NEXT_PUBLIC_URL}/api/roulette/roulette`
         }
       ],
       image: {

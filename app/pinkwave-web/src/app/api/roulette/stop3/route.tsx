@@ -19,7 +19,7 @@ async function getResponse(): Promise<NextResponse> {
       ],
       image: {
         aspectRatio: '1:1',
-        src: `${NEXT_PUBLIC_URL}/roulette/page5.png`,
+        src: `${NEXT_PUBLIC_URL}/roulette/page7.png`,
       },
     }),
   );
