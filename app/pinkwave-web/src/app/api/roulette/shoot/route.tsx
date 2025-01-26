@@ -15,7 +15,7 @@ async function getResponse(): Promise<NextResponse> {
           label: 'Main Building',
           action: 'post',
           target: `${NEXT_PUBLIC_URL}/api/roulette/shoot3`
-        }
+        },
         {
           label: '< back',
           action: 'post',
