@@ -9,7 +9,7 @@ async function getResponse(): Promise<NextResponse> {
         {
           label: 'Builder grants',
           action: 'post',
-          target: `${NEXT_PUBLIC_URL}/api/roulette/shoot`
+          target: `${NEXT_PUBLIC_URL}/api/roulette/stop2`
         },
         {
           label: 'Tipper grants',
