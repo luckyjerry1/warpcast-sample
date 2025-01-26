@@ -16,6 +16,11 @@ async function getResponse(): Promise<NextResponse> {
           action: 'post',
           target: `${NEXT_PUBLIC_URL}/api/roulette/shoot3`
         }
+        {
+          label: '< back',
+          action: 'post',
+          target: `${NEXT_PUBLIC_URL}/api/roulette/roulette`
+        }
       ],
       image: {
         aspectRatio: '1:1',
